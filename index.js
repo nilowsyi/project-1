@@ -26,8 +26,14 @@ const GetWeatherData = async (Getvalue) => {
             `Humidity: ${data.main.humidity}`,
             `Wind Speed: ${data.wind.speed}`
         ]
+        console.log(data)
         WeatherData.querySelector('.icon').innerHTML = `<img src="http://openweathermap.org/img/wn/${icon}.png"/>`
+        WeatherData.querySelector('.temperature').textContent = `${temperature}ºC`
+        WeatherData.querySelector('.description').textContent = description
+        WeatherData.querySelector('.details').innerHTML = details.map((detail) => 
+            `<p>${detail}</p>`
+        ).join("")
     } catch (error) {
-        
+        WeatherData.querySelector('.temperature').textContent = "An error happend, please try again"
     }
 }

@@ -7,7 +7,7 @@
 .container_weather{
     font-family: Arial, Helvetica, sans-serif;
     width: 700px;
-    height: 500px;
+    
     margin: 30px auto;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     text-align: center;
@@ -43,12 +43,11 @@
     background-color: rgb(44, 152, 214) ;
 }
 
-.weather_data h2{
-    font-size: 30px;
-}
 
-.weather_data p{
+
+.description{
     font-size: 20px;
+    text-transform: uppercase;
 }
 
 .details{
@@ -58,6 +57,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    
      
 }
 
